@@ -54,7 +54,7 @@ header a:hover::after {
     height: 1600px;
     background-color: #111;
     overflow: hidden;
-    background-image: url(img_3.png);
+    background-image: url(img_4.jpg);
     background-size: cover;
 
 }
@@ -62,7 +62,7 @@ header a:hover::after {
 .Container_titulo{
     height: 210px;
     width: 700px;
-    margin-top: 9%;
+    margin-top: 30%;
     margin-left: 32%;
 }
 
@@ -74,7 +74,9 @@ header a:hover::after {
 }
 
 #container_button{
-    margin-left: 42%
+    margin-left: 42%;
+    width: 280px;
+    
 }
 
 .button_buy{
@@ -83,10 +85,23 @@ header a:hover::after {
     background-color: rgba(38, 71, 52, 1);
     color: white;
     border-radius: 7px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.button_buy:hover{
+    background-color: white;
+    color: green
+
 }
 
 #buy_now{
     font-size: 30px;
+}
+
+#button_buy:hover{
+    color: #264734;
+    background-color: white;
+    transition: 0.3s ease;
 }
 
 
@@ -99,4 +114,19 @@ header a:hover::after {
     rgba(50, 90, 70, 1) 50%,
     rgba(38, 71, 52, 1) 100%
 );
+    
+    overflow: hidden;
 }
+
+.Container_desc{
+    margin: 200px;
+    margin-left: 33%;
+}
+
+.Container_desc h2{
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+
+}
+
