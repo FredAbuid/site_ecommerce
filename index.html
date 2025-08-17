@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
         <div  class="container_itens">
             <a href="#">Home</a>
             <a href="#">Compre</a>
-            <a href="#">Sobre</a>
+            <a href="QuemSomos.html">Quem Somos</a>
             <a href="#">Contato</a>
         </div>
     </header>
@@ -47,7 +47,7 @@
                  Produzidos com materiais resistentes ao sol e à umidade, eles transformam jardins, varandas 
                  e áreas de lazer em espaços acolhedores e sofisticados. Aproveite momentos ao ar livre com 
                  móveis que combinam a beleza natural da madeira com o design moderno.</p>
-                 <button class="Saiba_mais">
+                 <button class="Saiba_mais" onclick="window.location.href='#'">
                     <p id="buy_now">Saiba Mais</p>
                 </button>
             </div>    
@@ -58,7 +58,7 @@
             <div class="texto">
                <a href="#" class="Classificacao_moveis">Área Interna</a>
                 <p>Os móveis internos foram criados para valorizar cada detalhe do seu lar. Combinando praticidade, elegância e aconchego, eles se adaptam a diferentes estilos de decoração, tornando cada ambiente único. Sofás, mesas e estantes que não apenas completam sua casa, mas contam uma história de bom gosto e funcionalidade.</p>
-                <button class="Saiba_mais">
+                <button class="Saiba_mais" onclick="window.location.href='#'">
                     <p id="buy_now">Saiba Mais</p>
                 </button>
             </div>    
@@ -70,13 +70,13 @@
     <!-- Localização -->
     <div class="footer-info">
       <h3>Localização</h3>
-      <p>Rua Exemplo, 123 - Centro<br>Cidade - Estado</p>
+      <p>Rua das Árvores, 123 - Centro<br>MG - BH</p>
     </div>
 
     <!-- Contato -->
     <div class="footer-info">
       <h3>Contato</h3>
-      <p>Tel: (11) 99999-9999<br>Email: contato@exemplo.com</p>
+      <p>Tel: (31) 99999-9999<br>Email: VerdeMoveis@contato.com</p>
     </div>
 
     <!-- Redes sociais -->
@@ -108,6 +108,16 @@
   </div>
 </footer>
 
+    <script src="https://unpkg.com/scrollreveal"> </script>
+    <script>
+    ScrollReveal().reveal('.texto, .titulo_1, #container_button, #moveis_externos, #moveis_internos', {
+        duration: 2000,
+        distance: '50px',
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        interval: 100
+    });
+    </script>
 
 </body>
 </html>
