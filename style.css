@@ -10,47 +10,114 @@ html{
 }
 
 
-#header_pag1{
-    background-color: #264734;
-    width: 100%;
-    height: 90px;
-    color: white;
-    display: flex;
-    opacity: 0.7;
-    position: fixed;
-}
-.container_itens{
-    margin-left: 55%;
-    margin-top: 30px;
-}
-#logo_site{
-    max-width: 200px;
-    height: 100px;
-    width: 100px;
+#header_pag1 {
+  background-color: #264734;
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0.95;
+  flex-wrap: wrap; /* permite quebrar linha se faltar espaço */
 }
 
-.container_itens a{
- text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-size: 25px;
-    margin-right: 90px;
-    position: relative; 
+#logo_site {
+  max-width: 150px;
+  height: 100px;
+}
+
+/* Menu */
+.container_itens {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* deixa quebrar linha em telas menores */
+  justify-content: center;
+}
+
+.container_itens a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
 }
 
 .container_itens a::after {
-    content: "";
-    position: absolute;
-    bottom: -5px; /* distância da linha para o texto */
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
-header a:hover::after {
-    width: 100%;
+.container_itens a:hover::after {
+  width: 100%;
+}
+
+/* Ícones */
+.header-icons {
+ display: flex;
+  gap: 20px;
+  font-size: 20px;
+  margin-right: 40px; 
+}
+
+.header-icons a svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.header-icons a{
+    width:26;
+     height:26;
+     fill:white;
+    object-view-box:0 0 24 24;
+}
+
+.header-icons a:hover svg {
+  transform: scale(1.2);
+  fill: #00ffcc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #header_pag1 {
+    height: auto; /* deixa altura flexível */
+    padding: 10px;
+  }
+
+  #logo_site {
+    max-width: 120px;
+  }
+
+  .container_itens a {
+    font-size: 16px; /* diminui os links */
+    margin: 5px 0;
+  }
+
+  .header-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header_pag1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container_itens {
+    gap: 15px;
+  }
 }
 
 .Pag_principal{
@@ -329,9 +396,9 @@ text-align: center;
 
 .bg-video {
   width: 600%;
-  height: 70vh;             /* 70% da altura da tela */
+  height: 70vh;           
   object-fit: cover;
-  border-radius: 0;         /* sem arredondar (estilo banner) */
+  border-radius: 0;        
   display: block;
   margin-bottom: 90px;
 
