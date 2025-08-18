@@ -76,7 +76,6 @@ html {
     width: 26;
     height: 26;
     fill: white;
-    object-view-box: 0 0 24 24;
 }
 
 .header-icons a:hover svg {
