@@ -402,3 +402,23 @@ button:hover {
   line-height: 1.4;
 }
 
+.voltar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f4f4f;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.voltar-btn:hover {
+  color: #1c3131;
+  transform: translateX(-3px);
+}
+
+.voltar-seta {
+  font-size: 18px;
+}
