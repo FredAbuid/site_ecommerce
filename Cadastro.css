@@ -200,6 +200,7 @@ button {
 
 button:hover {
     background: #1d3527;
+    color: white;
 }
 
 .pedido {
@@ -262,3 +263,142 @@ button:hover {
 .resumo button:hover {
   background: #3c2416;
 }
+
+.produto-header {
+  background: #254d3c;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produto-logo {
+  height: 50px;
+}
+
+.produto-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.produto-header nav a:hover {
+  color: #d4af37;
+}
+
+.produto-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.produto-detalhes {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.produto-detalhes-img {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.produto-info {
+  flex: 1;
+}
+
+.produto-titulo {
+  margin: 0 0 15px;
+  color: #264734;
+}
+
+.produto-descricao {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.produto-preco {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#qtdProduto {
+  width: 70px;
+  padding: 6px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.produto-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #5a3825;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.produto-btn:hover {
+  background: #3c2416;
+}
+
+.produto-accordion {
+  margin-top: 25px;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  color: #5a3825;
+}
+
+.accordion-header::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+}
+
+.accordion-header.active::after {
+  content: "−";
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+}
+
+.accordion-content p,
+.accordion-content ul {
+  margin: 15px 0;
+  color: #444;
+  line-height: 1.4;
+}
+
