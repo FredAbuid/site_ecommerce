@@ -201,3 +201,64 @@ button {
 button:hover {
     background: #1d3527;
 }
+
+.pedido {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.produto-img {
+  width: 120px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.info h2 {
+  margin: 0 0 8px;
+  color: #264734;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info input {
+  width: 60px;
+  padding: 5px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.resumo {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.resumo h2 {
+  margin-bottom: 15px;
+  color: #264734;
+}
+
+.resumo p {
+  margin: 5px 0;
+}
+
+.resumo button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #5a3825;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resumo button:hover {
+  background: #3c2416;
+}

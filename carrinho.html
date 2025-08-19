@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Verde Móveis</title>
+    <title>Pedidos - Verde Móveis</title>
     <link rel="stylesheet" href="Cadastro.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header id="header_pag1">
         <a href="index.html"><img src="logo.png" id="logo_site"></a>
         <nav class="container_itens">
@@ -39,32 +38,41 @@
         </div>
     </header>
 
-    <div class="container">
-        <h1>Fale Conosco</h1>
-        <form>
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <main class="container">
+    <h1>Meus Pedidos</h1>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    <section class="pedido">
+      <img src="img_16.jpeg" alt="Cadeira de Madeira" class="produto-img">
+      <div class="info">
+        <h2>Luminária de pino</h2>
+        <p>Preço unitário: R$ 250,00</p>
+        <label>Quantidade:
+          <input type="number" min="1" value="2">
+        </label>
+        <p><strong>Total: R$ 500,00</strong></p>
+      </div>
+    </section>
 
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+    <section class="pedido">
+      <img src="img_15.jpeg" alt="Mesa Rústica" class="produto-img">
+      <div class="info">
+        <h2>Estante moderna</h2>
+        <p>Preço unitário: R$ 1200,00</p>
+        <label>Quantidade:
+          <input type="number" min="1" value="1">
+        </label>
+        <p><strong>Total: R$ 1200,00</strong></p>
+      </div>
+    </section>
 
-            <label for="assunto">Assunto</label>
-            <select id="assunto" name="assunto">
-                <option value="duvida">Dúvida</option>
-                <option value="suporte">Suporte</option>
-                <option value="orcamento">Orçamento</option>
-                <option value="outro">Outro</option>
-            </select>
-
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="resumo">
+      <h2>Resumo do Pedido</h2>
+      <p>Subtotal: R$ 1700,00</p>
+      <p>Frete: R$ 50,00</p>
+      <p><strong>Total Geral: R$ 1750,00</strong></p>
+      <button>Finalizar Pedido</button>
     </div>
+  </main>
 
 </body>
 </html>
